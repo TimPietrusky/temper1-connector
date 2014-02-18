@@ -1,0 +1,21 @@
+{
+  "name": "temper1-connector",
+  "title": "Temper1 Connector",
+  "description": "Connect to the USB temper1 thermomemeter.",
+  "url": "http://github.com/TimPietrusky/temper1-connector",
+  "author": "Tim Pietrusky",
+  "copyright": "2014",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/TimPietrusky/temper1-connector.git"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "node-hid": "~0.3.1"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}

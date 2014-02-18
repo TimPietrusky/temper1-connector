@@ -2,6 +2,8 @@
 
 A node module to connect to the USB [Temper1](http://pcsensor.com/index.php?_a=product&product_id=7) thermometer. 
 
+http://pcsensor.com/index.php?_a=product&product_id=7
+
 
 ## Dependencies
 

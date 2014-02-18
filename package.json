@@ -1,7 +1,7 @@
 {
   "name": "temper1-connector",
   "title": "Temper1 Connector",
-  "description": "Connect to the USB temper1 thermomemeter.",
+  "description": "Connect to the USB temper1 thermometer http://pcsensor.com/index.php?_a=product&product_id=7.",
   "url": "http://github.com/TimPietrusky/temper1-connector",
   "author": "Tim Pietrusky",
   "copyright": "2014",

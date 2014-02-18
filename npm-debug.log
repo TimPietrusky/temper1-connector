@@ -1,0 +1,141 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@1.3.24
+3 info using node@v0.10.25
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/timpietrusky/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/tmp.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball /home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/tmp.tgz
+13 verbose folder .
+14 info prepublish temper1-connector@0.0.2
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /home/timpietrusky/.npm/1f1177db-tar.lock
+17 silly lockFile fb47206e-67595-0-8381400718353689-tmp-tgz tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/tmp.tgz
+18 verbose lock tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/tmp.tgz /home/timpietrusky/.npm/fb47206e-67595-0-8381400718353689-tmp-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile fb47206e-67595-0-8381400718353689-tmp-tgz tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/tmp.tgz
+22 silly lockFile fb47206e-67595-0-8381400718353689-tmp-tgz tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/tmp.tgz
+23 verbose tar unpack /home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/tmp.tgz
+24 silly lockFile ef2ad35b-67595-0-8381400718353689-package tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/package
+25 verbose lock tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/package /home/timpietrusky/.npm/ef2ad35b-67595-0-8381400718353689-package.lock
+26 silly lockFile fb47206e-67595-0-8381400718353689-tmp-tgz tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/tmp.tgz
+27 verbose lock tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/tmp.tgz /home/timpietrusky/.npm/fb47206e-67595-0-8381400718353689-tmp-tgz.lock
+28 silly gunzTarPerm modes [ '755', '644' ]
+29 silly gunzTarPerm extractEntry package.json
+30 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+31 silly gunzTarPerm extractEntry .npmignore
+32 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+33 silly gunzTarPerm extractEntry README.md
+34 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+35 silly gunzTarPerm extractEntry LICENSE
+36 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+37 silly gunzTarPerm extractEntry index.js
+38 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+39 silly gunzTarPerm extractEntry test/test.js
+40 silly gunzTarPerm modified mode [ 'test/test.js', 436, 420 ]
+41 silly lockFile ef2ad35b-67595-0-8381400718353689-package tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/package
+42 silly lockFile ef2ad35b-67595-0-8381400718353689-package tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/package
+43 silly lockFile fb47206e-67595-0-8381400718353689-tmp-tgz tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/tmp.tgz
+44 silly lockFile fb47206e-67595-0-8381400718353689-tmp-tgz tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/tmp.tgz
+45 verbose tar pack [ '/home/timpietrusky/.npm/temper1-connector/0.0.2/package.tgz',
+45 verbose tar pack   '/home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/package' ]
+46 verbose tarball /home/timpietrusky/.npm/temper1-connector/0.0.2/package.tgz
+47 verbose folder /home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/package
+48 silly lockFile ef2ad35b-67595-0-8381400718353689-package tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/package
+49 verbose lock tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/package /home/timpietrusky/.npm/ef2ad35b-67595-0-8381400718353689-package.lock
+50 silly lockFile 9edd9f7f-per1-connector-0-0-2-package-tgz tar:///home/timpietrusky/.npm/temper1-connector/0.0.2/package.tgz
+51 verbose lock tar:///home/timpietrusky/.npm/temper1-connector/0.0.2/package.tgz /home/timpietrusky/.npm/9edd9f7f-per1-connector-0-0-2-package-tgz.lock
+52 silly lockFile ef2ad35b-67595-0-8381400718353689-package tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/package
+53 silly lockFile ef2ad35b-67595-0-8381400718353689-package tar:///home/timpietrusky/tmp/npm-31577-fo1meueF/1392698267595-0.8381400718353689/package
+54 silly lockFile 9edd9f7f-per1-connector-0-0-2-package-tgz tar:///home/timpietrusky/.npm/temper1-connector/0.0.2/package.tgz
+55 silly lockFile 9edd9f7f-per1-connector-0-0-2-package-tgz tar:///home/timpietrusky/.npm/temper1-connector/0.0.2/package.tgz
+56 silly lockFile 9cd501fd--temper1-connector-0-0-2-package /home/timpietrusky/.npm/temper1-connector/0.0.2/package
+57 verbose lock /home/timpietrusky/.npm/temper1-connector/0.0.2/package /home/timpietrusky/.npm/9cd501fd--temper1-connector-0-0-2-package.lock
+58 silly lockFile 9cd501fd--temper1-connector-0-0-2-package /home/timpietrusky/.npm/temper1-connector/0.0.2/package
+59 silly lockFile 9cd501fd--temper1-connector-0-0-2-package /home/timpietrusky/.npm/temper1-connector/0.0.2/package
+60 verbose tar unpack /home/timpietrusky/.npm/temper1-connector/0.0.2/package.tgz
+61 silly lockFile 5afaf88d--temper1-connector-0-0-2-package tar:///home/timpietrusky/.npm/temper1-connector/0.0.2/package
+62 verbose lock tar:///home/timpietrusky/.npm/temper1-connector/0.0.2/package /home/timpietrusky/.npm/5afaf88d--temper1-connector-0-0-2-package.lock
+63 silly lockFile 9edd9f7f-per1-connector-0-0-2-package-tgz tar:///home/timpietrusky/.npm/temper1-connector/0.0.2/package.tgz
+64 verbose lock tar:///home/timpietrusky/.npm/temper1-connector/0.0.2/package.tgz /home/timpietrusky/.npm/9edd9f7f-per1-connector-0-0-2-package-tgz.lock
+65 silly gunzTarPerm modes [ '755', '644' ]
+66 silly gunzTarPerm extractEntry package.json
+67 silly gunzTarPerm extractEntry .npmignore
+68 silly gunzTarPerm extractEntry README.md
+69 silly gunzTarPerm extractEntry LICENSE
+70 silly gunzTarPerm extractEntry index.js
+71 silly gunzTarPerm extractEntry test/test.js
+72 silly lockFile 5afaf88d--temper1-connector-0-0-2-package tar:///home/timpietrusky/.npm/temper1-connector/0.0.2/package
+73 silly lockFile 5afaf88d--temper1-connector-0-0-2-package tar:///home/timpietrusky/.npm/temper1-connector/0.0.2/package
+74 silly lockFile 9edd9f7f-per1-connector-0-0-2-package-tgz tar:///home/timpietrusky/.npm/temper1-connector/0.0.2/package.tgz
+75 silly lockFile 9edd9f7f-per1-connector-0-0-2-package-tgz tar:///home/timpietrusky/.npm/temper1-connector/0.0.2/package.tgz
+76 verbose chmod /home/timpietrusky/.npm/temper1-connector/0.0.2/package.tgz 644
+77 verbose chown /home/timpietrusky/.npm/temper1-connector/0.0.2/package.tgz [ 1000, 1000 ]
+78 silly lockFile 3a52ce78- .
+79 silly lockFile 3a52ce78- .
+80 silly publish { name: 'temper1-connector',
+80 silly publish   title: 'Temper1 Connector',
+80 silly publish   description: 'Connect to the USB temper1 thermometer http://pcsensor.com/index.php?_a=product&product_id=7.',
+80 silly publish   url: 'http://github.com/TimPietrusky/temper1-connector',
+80 silly publish   author: { name: 'Tim Pietrusky' },
+80 silly publish   copyright: '2014',
+80 silly publish   version: '0.0.2',
+80 silly publish   license: 'MIT',
+80 silly publish   repository:
+80 silly publish    { type: 'git',
+80 silly publish      url: 'http://github.com/TimPietrusky/temper1-connector.git' },
+80 silly publish   main: './index.js',
+80 silly publish   dependencies: { 'node-hid': '~0.3.1' },
+80 silly publish   engines: { node: '>=0.10' },
+80 silly publish   readme: '# Temper1 Connector\n\nA node module to connect to the USB [Temper1](http://pcsensor.com/index.php?_a=product&product_id=7) thermometer. \n\n\n## Dependencies\n\n### libusb\n\nAt first you have to install [libusb](http://www.libusb.org/) in order to use this module. \n\n\n## Author\n\n2014 by [Tim Pietrusky](http://twitter.com/TimPietrusky)',
+80 silly publish   readmeFilename: 'README.md',
+80 silly publish   bugs: { url: 'https://github.com/TimPietrusky/temper1-connector/issues' },
+80 silly publish   homepage: 'https://github.com/TimPietrusky/temper1-connector',
+80 silly publish   _id: 'temper1-connector@0.0.2',
+80 silly publish   dist: { shasum: '03005929e7dc177d390dd0cef545cac1591b864d' },
+80 silly publish   _from: '.' }
+81 verbose url raw temper1-connector
+82 verbose url resolving [ 'https://registry.npmjs.org/', './temper1-connector' ]
+83 verbose url resolved https://registry.npmjs.org/temper1-connector
+84 info trying registry request attempt 1 at 05:37:47
+85 http PUT https://registry.npmjs.org/temper1-connector
+86 http 409 https://registry.npmjs.org/temper1-connector
+87 verbose url raw temper1-connector
+88 verbose url resolving [ 'https://registry.npmjs.org/', './temper1-connector' ]
+89 verbose url resolved https://registry.npmjs.org/temper1-connector
+90 info trying registry request attempt 1 at 05:37:48
+91 http GET https://registry.npmjs.org/temper1-connector
+92 http 200 https://registry.npmjs.org/temper1-connector
+93 error publish fail Cannot publish over existing version.
+93 error publish fail Update the 'version' field in package.json and try again.
+93 error publish fail
+93 error publish fail If the previous version was published in error, see:
+93 error publish fail     npm help unpublish
+93 error publish fail
+93 error publish fail To automatically increment version numbers, see:
+93 error publish fail     npm help version
+94 error System Linux 3.8.0-35-generic
+95 error command "/usr/bin/node" "/usr/bin/npm" "publish"
+96 error cwd /home/timpietrusky/Development/workspaces/node/temper1-connector
+97 error node -v v0.10.25
+98 error npm -v 1.3.24
+99 error code EPUBLISHCONFLICT
+100 verbose exit [ 1, true ]

@@ -146,7 +146,9 @@ Temper1Connector.prototype.command = function(command) {
               temp = -temp;
             }
             
-            console.log(temp * 125.0 / 32000.0);
+            // console.log(temp * 125.0 / 32000.0);
+
+            result = temp * 125.0 / 32000.0
           });
           break;
 

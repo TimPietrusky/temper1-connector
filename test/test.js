@@ -1,22 +1,36 @@
 var myTemper1Connector = require("..");
+console.log('connecting');
 
+
+
+
+
+// Connect to device
 var result = myTemper1Connector.connect();
+console.log('connected');
 
+
+
+
+
+// Initial value
+var result = myTemper1Connector.command("read", function(value) {
+  console.log(value);
+});
+
+console.log(result);
+
+
+
+
+
+// New value every x ms
 setInterval(function() {
-  myTemper1Connector.command("read");
-}, 2500);
+  // Read the current value
+  result = myTemper1Connector.command("read", function(value) {
+    console.log(value);
+  });
 
-// console.log("Devices found:"+devices[0]);
+  console.log(result);
 
-// thermometers.readTemperature(devices[0], function(err, value) {
-//   console.log("Result:"+value);
-// });
-
-// var assert = require("assert");
-
-// describe('result', function(){
-//     it('should return -1 when the value is not present', function(){
-//       assert.equal(-1, [1,2,3].indexOf(5));
-//       assert.equal(-1, [1,2,3].indexOf(0));
-//     })
-// })
+}, 500);

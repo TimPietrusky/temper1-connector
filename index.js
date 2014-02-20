@@ -81,22 +81,6 @@ Temper1Connector.prototype.connect = function() {
       // Open the device
       this.device = new HID.HID(element.path);
 
-      // this.device.on("data", function(data) {
-      //   console.log(data);
-
-      //   var hiByte = data[2];
-      //   var loByte = data[3];
-
-      //   var sign = hiByte & (1 << 7);
-      //   var temp = ((hiByte & 0x7F) << 8) | loByte;
-        
-      //   if (sign) {
-      //     temp = -temp;
-      //   }
-        
-      //   console.log(temp * 125.0 / 32000.0);
-      // });
-
       // Set the result
       result = this.messages.connected;
     }
@@ -113,12 +97,16 @@ Temper1Connector.prototype.connect = function() {
 /**
  * Send a command to the USB device
  */
-Temper1Connector.prototype.command = function(command) {
-  var result = this.messages.success;
+Temper1Connector.prototype.command = function(command, callback) {
+  var result = this.messages.success,
+      callback = callback || null,
+      temperature = null
+  ;
 
   // Do nothing if no device is connected & the command is not "connect"
   if (this.device == null && command !== 'connect') {
-    result = this.messages.notConnected;
+    // Try to connect
+    result = this.connect();
 
   // Execute a command if a device is connected
   } else {
@@ -133,9 +121,11 @@ Temper1Connector.prototype.command = function(command) {
 
         // Stop everything the device is doing right now
         case 'read' :
+
           this.device.write(this.options.read);
           this.device.read(function(error, data) {
             
+            // Transform the temperature
             var hiByte = data[2];
             var loByte = data[3];
 
@@ -145,10 +135,12 @@ Temper1Connector.prototype.command = function(command) {
             if (sign) {
               temp = -temp;
             }
-            
-            // console.log(temp * 125.0 / 32000.0);
 
-            result = temp * 125.0 / 32000.0
+            // Calculate it
+            temperature = temp * 125.0 / 32000.0;
+
+            // Send the temperature via callback
+            callback(temperature);
           });
           break;
 
@@ -171,6 +163,10 @@ Temper1Connector.prototype.command = function(command) {
       }
     }
 
+  }
+
+  if (temperature != null) {
+    result = temperature;
   }
 
   return result;
